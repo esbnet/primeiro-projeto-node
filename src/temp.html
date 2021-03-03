@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="theme-color" content="#2db24a" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+  <link href="https://use.typekit.net/fty5tgq.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+  <style data-styled="" data-styled-version="5.2.0">
+    .iumhGk {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      background: none;
+      box-shadow: none;
+    }
+
+    /*!sc*/
+    .iumhGk .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    /*!sc*/
+    .iumhGk .container a.brand {
+      position: relative;
+      display: inline-block;
+      line-height: 0;
+    }
+
+    /*!sc*/
+    .iumhGk .container a.brand img {
+      width: auto;
+      height: 32px;
+    }
+
+    /*!sc*/
+    .iumhGk .container a.brand img.logo-default {
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    /*!sc*/
+    @media screen and (min-width:1200px) {
+      .iumhGk .container a.brand img.logo-default {
+        display: none;
+      }
+    }
+
+    /*!sc*/
+    .iumhGk .container>button,
+    .iumhGk .container a.brand {
+      position: relative;
+      z-index: 2;
+    }
+
+    /*!sc*/
+    .iumhGk .container>button {
+      background: #fff !important;
+      position: relative;
+    }
+
+    /*!sc*/
+    .iumhGk .container>button:first-of-type {
+      margin-left: -15px;
+    }
+
+    /*!sc*/
+    .iumhGk .container>button:last-of-type {
+      margin-right: -15px;
+    }
+
+    /*!sc*/
+    .iumhGk .container>button .icon-menu {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+
+    /*!sc*/
+    .iumhGk .container>button .icon-menu.icon-menu-return {
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0;
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user {
+      position: relative;
+      margin-right: -15px;
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user>button,
+    .iumhGk .container .menu-user>a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user button.btn-user img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: calc(100% - 4px);
+      width: calc(100% - 4px);
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user ul {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      border-radius: 12px 0 12px 12px;
+      padding: 10px 0;
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      -webkit-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user ul li a,
+    .iumhGk .container .menu-user ul li button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 0;
+      background: none;
+      white-space: nowrap;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: var(--color-grey-4);
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /*!sc*/
+    .iumhGk .container .menu-user ul li a:hover,
+    .iumhGk .container .menu-user ul li button:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    /*!sc*/
+    .iumhGk .container ul.menu {
+      list-style: none;
+    }
+
+    /*!sc*/
+    .iumhGk .container ul.menu li a {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      border-radius: 20px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    /*!sc*/
+    .iumhGk .container ul.menu li a.active {
+      background: var(--color-grey-5);
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /*!sc*/
+    .iumhGk .container ul.menu li a:hover {
+      background: var(--color-green-5);
+      color: var(--color-grey-5);
+    }
+
+    /*!sc*/
+    @media screen and (max-width:1199px) {
+
+      .iumhGk .container>.menu-user>button,
+      .iumhGk .container>button {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+      }
+
+      .iumhGk .container>.menu-user>button.btn-user,
+      .iumhGk .container>button.btn-user {
+        border-radius: 50%;
+      }
+
+      .iumhGk .container>.menu-user>button.btn-user span,
+      .iumhGk .container>button.btn-user span {
+        display: none;
+      }
+
+      .iumhGk .container .menu-user.main-menu-opened>button,
+      .iumhGk .container .menu-user.main-menu-opened>a {
+        background: var(--color-green-2);
+      }
+
+      .iumhGk .container .menu-user.main-menu-opened>button svg,
+      .iumhGk .container .menu-user.main-menu-opened>a svg {
+        color: #fff !important;
+      }
+
+      .iumhGk .container .menu-user.main-menu-opened ul {
+        background: var(--color-green-2);
+      }
+
+      .iumhGk .container .menu-user.main-menu-opened ul a,
+      .iumhGk .container .menu-user.main-menu-opened ul button {
+        color: #fff;
+      }
+
+      .iumhGk .container .menu-user.main-menu-opened ul li.header-user-menu-mobile {
+        color: #FFF;
+      }
+
+      .iumhGk .container .menu-user.opened>button,
+      .iumhGk .container .menu-user.opened>a {
+        border-radius: 40px 40px 0 0;
+        box-shadow: none;
+      }
+
+      .iumhGk .container .menu-user.opened ul {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .iumhGk .container .menu-user>button .icon-desktop,
+      .iumhGk .container .menu-user>a .icon-desktop {
+        display: none;
+      }
+
+      .iumhGk .container ul li.header-user-menu-mobile {
+        padding: 10px 20px;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        color: var(--color-green-2);
+      }
+
+      .iumhGk .container ul li.header-user-menu-mobile span {
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        position: relative;
+      }
+
+      .iumhGk ul.menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding: 30px;
+        padding-top: calc(60px + 15px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        -webkit-transition: -webkit-transform 0.3s ease;
+        -webkit-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        -webkit-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+      }
+
+      .iumhGk ul.menu li a {
+        color: var(--color-grey-3);
+        padding: 10px 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      .iumhGk ul.menu li a.special {
+        background: var(--color-green-4);
+        color: #FFF;
+        font-weight: bold;
+      }
+
+      .iumhGk ul.menu li a.active {
+        background: var(--color-grey-6);
+        color: var(--color-grey-5);
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:1200px) {
+      .iumhGk .container {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        height: 100px;
+      }
+
+      .iumhGk .container a.brand img {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        height: 48px;
+      }
+
+      .iumhGk .container>button:last-of-type {
+        margin-right: 0;
+      }
+
+      .iumhGk .container>button.btn-menu {
+        display: none;
+      }
+
+      .iumhGk .container>button.btn-user svg {
+        display: none;
+      }
+
+      .iumhGk .container .menu-user>button,
+      .iumhGk .container .menu-user>a {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px;
+        padding-right: 20px;
+        max-width: 200px;
+        border-radius: 22px;
+      }
+
+      .iumhGk .container .menu-user>button svg,
+      .iumhGk .container .menu-user>a svg {
+        margin-right: 10px;
+      }
+
+      .iumhGk .container .menu-user>button svg.icon-mobile,
+      .iumhGk .container .menu-user>a svg.icon-mobile {
+        display: none;
+      }
+
+      .iumhGk .container .menu-user>button span,
+      .iumhGk .container .menu-user>a span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .iumhGk .container .menu-user button.btn-user img {
+        height: 30px;
+        width: 30px;
+        margin: 4px;
+      }
+
+      .iumhGk .container .menu-user:hover>button,
+      .iumhGk .container .menu-user:hover>a {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      .iumhGk .container .menu-user:hover ul {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .iumhGk .container .menu-user ul {
+        -webkit-transform: translate3d(0, -10px, 0);
+        -ms-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        border-radius: 12px;
+        top: calc(100% - 32px);
+        padding-top: calc(10px + 32px);
+        min-width: 100%;
+      }
+
+      .iumhGk .container .menu-user ul li a,
+      .iumhGk .container .menu-user ul li button {
+        min-width: 100%;
+        text-align: left;
+        color: var(--color-grey-5);
+      }
+
+      .iumhGk .container .menu-user ul li.header-user-menu-mobile {
+        display: none;
+      }
+
+      .iumhGk .container ul.menu li {
+        display: inline-block;
+      }
+
+      .iumhGk .container ul.menu li a {
+        color: #fff;
+        padding: 10px 20px;
+      }
+
+      .iumhGk .container ul.menu li a.special {
+        background: var(--color-green-5);
+        color: #FFF;
+        font-weight: bold;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .08);
+      }
+
+      .iumhGk .container ul.menu li a.special:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:1200px) {
+
+      .iumhGk .container .menu-user>button,
+      .iumhGk .container .menu-user>a {
+        max-width: 250px;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g1[id="styles__Container-sc-1btvzy4-0"] {
+      content: "iumhGk,"
+    }
+
+    /*!sc*/
+    .bQfybz {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /*!sc*/
+    @media screen and (min-width:992px) {
+      .bQfybz {
+        display: none;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g2[id="styles__MenuOverlay-sc-1btvzy4-1"] {
+      content: "bQfybz,"
+    }
+
+    /*!sc*/
+    .gWFazp {
+      background-color: var(--color-grey-5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /*!sc*/
+    .gWFazp nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    /*!sc*/
+    .gWFazp nav ul li a {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 18px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    /*!sc*/
+    .gWFazp nav ul li a:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /*!sc*/
+    @media screen and (max-width:767px) {
+      .gWFazp .brand div {
+        margin-left: -30px;
+        width: 100vw;
+        padding: 40px 30px;
+        background: url('/assets/bg-texture-intro.svg') center left no-repeat;
+      }
+
+      .gWFazp .brand div:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 100vw;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(87, 90, 94, 0.1), rgba(87, 90, 94, 0.9) 40%);
+      }
+
+      .gWFazp .brand div a {
+        position: relative;
+      }
+
+      .gWFazp nav {
+        margin: 40px 0;
+        margin-left: -10px;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:768px) {
+      .gWFazp {
+        padding: 40px 0;
+        background: var(--color-grey-5) url('/assets/bg-texture-intro.svg') center left no-repeat;
+      }
+
+      .gWFazp:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(50deg, transparent, var(--color-grey-5) 25%);
+      }
+
+      .gWFazp .brand {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:992px) {
+      .gWFazp {
+        padding: 80px 0;
+        margin-bottom: 0 !important;
+      }
+
+      .gWFazp nav {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+      }
+
+      .gWFazp nav ul li {
+        display: inline-block;
+      }
+
+      .gWFazp nav ul li a {
+        padding: 10px 20px;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g3[id="styles__Container-hhztnb-0"] {
+      content: "gWFazp,"
+    }
+
+    /*!sc*/
+    .etEnsZ {
+      padding-top: 60px;
+      background-color: var(--color-green-2);
+      color: #fff;
+      position: relative;
+    }
+
+    /*!sc*/
+    .etEnsZ .container {
+      position: relative;
+    }
+
+    /*!sc*/
+    .etEnsZ:before,
+    .etEnsZ:after {
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+    }
+
+    /*!sc*/
+    @-webkit-keyframes texture {
+      from {
+        -webkit-transform: translate3d(-10%, 0, 0);
+        -ms-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0);
+      }
+
+      to {
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    /*!sc*/
+    @keyframes texture {
+      from {
+        -webkit-transform: translate3d(-10%, 0, 0);
+        -ms-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0);
+      }
+
+      to {
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    /*!sc*/
+    .etEnsZ:after {
+      background: url('/assets/bg-texture-intro.svg') center center no-repeat;
+      background-size: auto 100%;
+      z-index: 2;
+      -webkit-animation: texture 20s linear infinite alternate;
+      animation: texture 20s linear infinite alternate;
+      width: 100%;
+    }
+
+    /*!sc*/
+    .etEnsZ:before {
+      z-index: 1;
+      background: linear-gradient(35deg, var(--color-green-5), var(--color-green-2) 40%);
+    }
+
+    /*!sc*/
+    .etEnsZ .bg-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-green-2);
+      background-image: url(https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg), linear-gradient(35deg, var(--color-green-5), var(--color-green-2) 40%);
+      background-position: center center;
+      background-size: cover;
+      background-blend-mode: multiply;
+      opacity: 0.3;
+      z-index: 3;
+    }
+
+    /*!sc*/
+    .etEnsZ .content {
+      z-index: 4;
+      position: relative;
+    }
+
+    /*!sc*/
+    @media screen and (max-width:600px) {
+      .etEnsZ .content {
+        overflow: hidden;
+      }
+    }
+
+    /*!sc*/
+    .etEnsZ .content .container .row {
+      min-height: 50vh;
+    }
+
+    /*!sc*/
+    .etEnsZ .row {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    /*!sc*/
+    .etEnsZ .col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+
+    /*!sc*/
+    .etEnsZ .col-info {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    /*!sc*/
+    @media screen and (orientation:landscape) {
+      .etEnsZ .col-info {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 80px;
+      }
+    }
+
+    /*!sc*/
+    .etEnsZ .col-figure {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+
+    /*!sc*/
+    .etEnsZ .col-figure img {
+      max-width: 100%;
+      margin-bottom: -40%;
+    }
+
+    /*!sc*/
+    @media screen and (orientation:landscape) {
+      .etEnsZ .col-figure {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .etEnsZ .col-figure img {
+        margin-bottom: 0;
+      }
+    }
+
+    /*!sc*/
+    .etEnsZ h1 {
+      font-size: 36px;
+    }
+
+    /*!sc*/
+    .etEnsZ h1.large {
+      font-size: 42px;
+    }
+
+    /*!sc*/
+    .etEnsZ p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.2em;
+    }
+
+    /*!sc*/
+    .etEnsZ p span {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    /*!sc*/
+    .etEnsZ p span svg {
+      margin-right: 5px;
+    }
+
+    /*!sc*/
+    .etEnsZ p span:last-child {
+      margin-right: 0;
+    }
+
+    /*!sc*/
+    .etEnsZ .parent {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: var(--color-green-5);
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    /*!sc*/
+    @media screen and (min-width:576px) {
+      .etEnsZ .col {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .etEnsZ .col-figure img {
+        margin-bottom: 0;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:768px) {
+      .etEnsZ h1.large {
+        font-size: 62px;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:992px) {
+      .etEnsZ {
+        padding-top: 100px;
+      }
+
+      .etEnsZ h1 {
+        font-size: 56px;
+      }
+
+      .etEnsZ h1:not(.large)+p {
+        font-size: 24px;
+      }
+
+      .etEnsZ p {
+        margin-top: 30px;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:1200px) {
+      .etEnsZ h1.large {
+        font-size: 72px;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g4[id="styles__Container-sc-5tq2ud-0"] {
+      content: "etEnsZ,"
+    }
+
+    /*!sc*/
+    .eTRtau {
+      position: relative;
+    }
+
+    /*!sc*/
+    .eTRtau .btn-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 0;
+      margin: auto;
+      -webkit-transform: translate3d(0, 50%, 0);
+      -ms-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      z-index: 4;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    /*!sc*/
+    .eTRtau .btn-down:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    /*!sc*/
+    @media screen and (min-width:768px) {
+      .eTRtau .btn-down {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g8[id="styles__BtnDown-sc-5tq2ud-4"] {
+      content: "eTRtau,"
+    }
+
+    /*!sc*/
+    .pRmZG {
+      height: 100%;
+    }
+
+    /*!sc*/
+    .pRmZG .bg-image {
+      background-position: center right;
+      opacity: 0.5;
+    }
+
+    /*!sc*/
+    .pRmZG h1.large {
+      font-size: 32px;
+    }
+
+    /*!sc*/
+    .pRmZG main {
+      padding: 40px 0;
+    }
+
+    /*!sc*/
+    .pRmZG main p {
+      line-height: 1.6em;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-header {
+      margin-bottom: 20px;
+      border-bottom: solid 1px var(--color-grey-6);
+      padding-bottom: 20px;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-footer {
+      margin-top: 20px;
+      border-top: solid 1px var(--color-grey-6);
+      padding-top: 20px;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-categories {
+      color: var(--color-green-4);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 1.3em;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-categories span {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-info svg {
+      color: var(--color-green-4);
+      margin-right: 5px;
+    }
+
+    /*!sc*/
+    .pRmZG main .post-info div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    /*!sc*/
+    .pRmZG main aside {
+      margin-top: 30px;
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a {
+      display: block;
+      border: solid 3px var(--color-grey-6);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      overflow: hidden;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: var(--color-grey-3);
+      margin-bottom: 25px;
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a .latest-post-cover img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a .latest-post-info {
+      padding: 15px;
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a .latest-post-info .post-title {
+      font-size: 16px;
+    }
+
+    /*!sc*/
+    .pRmZG main aside .post-latest ul li a .latest-post-info .latest-post-date {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: solid 1px var(--color-grey-6);
+      font-style: italic;
+    }
+
+    /*!sc*/
+    @media screen and (min-width:400px) {
+      .pRmZG h1.large {
+        font-size: 42px;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:768px) {
+      .pRmZG main {
+        font-size: 16px;
+      }
+
+      .pRmZG main .post-header {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+      }
+
+      .pRmZG main .post-footer {
+        margin-top: 40px;
+        padding-top: 40px;
+      }
+
+      .pRmZG main .post-info {
+        margin-top: 20px;
+      }
+
+      .pRmZG main aside {
+        margin-top: 0;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:992px) {
+      .pRmZG h1.large {
+        font-size: 52px;
+      }
+
+      .pRmZG main {
+        padding: 60px 0;
+      }
+    }
+
+    /*!sc*/
+    @media screen and (min-width:1200px) {
+      .pRmZG h1.large {
+        font-size: 62px;
+      }
+    }
+
+    /*!sc*/
+    data-styled.g10[id="post__Container-sc-1f5xx9f-1"] {
+      content: "pRmZG,"
+    }
+
+    /*!sc*/
+  </style>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>9 soft skills mais procuradas pelas empresas | Solution</title>
+  <meta property="og:image"
+    content="https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg" />
+  <meta name="next-head-count" content="4" />
+  <link rel="preload" href="/_next/static/css/7ab90e6efb5d87aa9661.css" as="style" />
+  <link rel="stylesheet" href="/_next/static/css/7ab90e6efb5d87aa9661.css" />
+  <link rel="preload" href="/_next/static/chunks/main-80953625ffe90e555181.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/webpack-488dc228921f1fdbc0e7.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/framework.a5d4ffe593e18b49243e.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/commons.df970249aa3f489cd61e.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/f7b7b2da00d107e866539eecac865b0df10f37ff.9db215fd6407b6b58822.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/ea3e4da80c20ad35d6d415ed6dbd982421b4189f.5f35177e51e1d22b437b.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/pages/_app-61aed7a2e8a26f5e19d8.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/1bfc9850.c62a7fdd8819c8997449.js" as="script" />
+  <link rel="preload" href="/_next/static/chunks/523e3018483e5e896f365fad768dae57c9c37968.a1bb204f1f8b8207bec2.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/925836a208f2f885aab45f08293f702b2be5a1a2.3ece2e044b15a5069cf2.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/a82fc68a3ca230092d1628da8cf06fbb577bab16.644770544283622a0898.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/cd25562b420aa918cbd941088e880351c6c3d2e6.98a9590783549f770b9c.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/57c870d3bc193910bfa4c51064e64ecc9955d4ca.f45841ff11a11a35f23e.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/e62dc9f6a11d84dfddaca06be4756b049d146996.fa86edde57ef6156b1ac.js"
+    as="script" />
+  <link rel="preload" href="/_next/static/chunks/pages/%5Bslug%5D-90a0fad8cc889d55a02a.js" as="script" />
+</head>
+
+<body>
+  <div id="__next">
+    <div class="post__Container-sc-1f5xx9f-1 pRmZG">
+      <header class="styles__Container-sc-1btvzy4-0 iumhGk">
+        <div class="styles__MenuOverlay-sc-1btvzy4-1 bQfybz"></div>
+        <nav>
+          <div class="container"><button type="button" class="btn btn-menu"><svg stroke="currentColor"
+                fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="var(--color-green-2)"
+                class="icon-menu" style="color:var(--color-green-2)" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                </path>
+              </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                color="var(--color-green-2)" class="icon-menu icon-menu-return" style="color:var(--color-green-2)"
+                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
+                </path>
+              </svg><span class="sr-only">Menu</span></button><a class="brand" href="/"><img
+                src="/assets/logo-solution-white.svg" alt="Plataforma Solution" class="logo-white" /><img
+                src="/assets/logo-solution.svg" alt="Plataforma Solution" class="logo-default" /></a>
+            <ul class="menu">
+              <li><a href="/">Nossas Quests</a></li>
+              <li><a href="/cursos/">Solution Originals</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/sobre/">Quem Somos</a></li>
+              <li><a href="/duvidas/">Dúvidas</a></li>
+              <li><a href="https://cursos.plataformasolution.com.br/Account/Login" class="special" target="_blank"
+                  rel="noreferrer">Meus Cursos</a></li>
+            </ul><button type="button" class="btn btn-user"><svg stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 448 512" color="var(--color-green-2)" style="color:var(--color-green-2)"
+                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                </path>
+              </svg><span>Entrar</span></button>
+          </div>
+        </nav>
+      </header>
+      <section class="styles__Container-sc-5tq2ud-0 etEnsZ">
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col col-12 col-sm-7 col-lg-12 col-info justify-content-center"><a class="parent"
+                  href="/blog/">Blog</a>
+                <h1 class="large">9 soft skills mais procuradas pelas empresas</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-image"></div>
+        <div class="styles__BtnDown-sc-5tq2ud-4 eTRtau btn-down-container container"><button class="btn-down"
+            type="button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+              size="20" color="var(--color-grey-2)" style="color:var(--color-grey-2)" height="20" width="20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+              </path>
+            </svg></button></div>
+      </section>
+      <main>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-7">
+              <div class="post-header">
+                <div class="post-categories">Categorias:
+                  <!-- --> <span>Carreira</span></div>
+                <div class="post-info">
+                  <div class="post-date"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" size="16" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z">
+                      </path>
+                    </svg>02 de outubro de 2019</div>
+                  <div class="post-author"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 496 512" size="16" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z">
+                      </path>
+                    </svg>Ana Rízia</div>
+                </div>
+              </div>
+              <article class="content">
+                <p>Você já sabe como será a <a href="https://next.pecege.com/?p=2173" target="_blank"
+                    rel="noreferrer noopener" aria-label=" (abre numa nova aba)">relação dos profissionais com as
+                    máquinas no futuro</a>. Agora é hora de aprender os diferenciais que vão garantir sua relevância no
+                  mercado de trabalho. As soft skills são as competências humanas que estão deixando as técnicas
+                  profissionais, chamadas de hard skills, em segundo plano.</p>
+
+
+
+                <p>As principais diferenças entre as pessoas e os robôs estão nas habilidades socioemocionais,
+                  adquiridas, especialmente, a partir do desenvolvimento da <a
+                    href="https://next.pecege.com/blog/2019/06/04/inteligencia-emocional-e-problemas/" target="_blank"
+                    rel="noreferrer noopener" aria-label=" (abre numa nova aba)">inteligência emocional</a>. E as
+                  empresas estão de olho nisso!</p>
+
+
+
+                <p>As soft skills são mais difíceis de medir ou definir do que
+                  as hard skills. Assim, elas também são mais complicadas de aprender, por isso
+                  são tão valorizadas no ambiente corporativo.</p>
+
+
+
+                <p>Para uma empresa, pode ser mais fácil, por exemplo,
+                  incentivar um profissional a aprender inglês, que é uma competência essencialmente
+                  técnica, do que trabalho em equipe, uma habilidade comportamental.</p>
+
+
+
+                <p>Assim, as vantagens de desenvolver soft skills são inúmeras,
+                  já que elas evidenciam lideranças, facilitam a convivência corporativa e
+                  auxiliam na adaptação a novas tecnologias que acabam mudando vidas, relações
+                  sociais e trabalhos.</p>
+
+
+
+                <p>Separamos nove soft skills que estão no radar das empresas.</p>
+
+
+
+                <h3>Comunicação</h3>
+
+
+
+                <p>Parece óbvio, mas mesmo as grandes empresas de comunicação
+                  têm dificuldades de manter bons diálogos internos e externos. E, se toda
+                  empresa é feita de pessoas, profissionais que saibam se comunicar com clareza
+                  e, especialmente, honestidade saem na frente.</p>
+
+
+
+                <h3>Gestão do tempo</h3>
+
+
+
+                <p>Saber administrar seu tempo é uma das soft skills que mais
+                  chamam a atenção das empresas. Essa característica é associada a profissionais
+                  comprometidos e reflete organização e respeito com o trabalho dos outros
+                  colegas e com os consumidores.</p>
+
+
+
+                <h3>Solução de problemas</h3>
+
+
+
+                <p>Quem tem a habilidade de se apropriar das adversidades e
+                  resolvê-las com objetividade faz a diferença na equipe. Isso tem a ver com
+                  dominar, tecnicamente, seu ramo de atuação, e também com proatividade. Essa
+                  característica motiva os colegas e satisfaz os clientes.</p>
+
+
+
+                <h3>Flexibilidade e adaptabilidade</h3>
+
+
+
+                <p>Ser humano é ser adaptável. Mas surgiram profissionais no
+                  mercado de trabalho cada vez menos flexíveis nas últimas décadas. O motivo
+                  disso pode ser o crescimento da capacitação e, consequentemente, o aumento do
+                  nível técnico dos funcionários. Por isso, ser tolerante e compreensivo cria um
+                  ambiente agradável e acolhedor.&nbsp; </p>
+
+
+
+                <h3>Lidar com pressão</h3>
+
+
+
+                <p>Por mais leve que a rotina possa ser, imprevistos e
+                  solicitações de última hora sempre chegam para as equipes. Assim, conseguir
+                  manter o ritmo de trabalho mesmo que haja certa pressão é visto com bons olhos
+                  pelas empresas, pois demonstra foco e determinação.</p>
+
+
+
+                <h3>Trabalho em equipe</h3>
+
+
+
+                <p>Cada dia mais as empresas valorizam as equipes e seus feitos
+                  em conjunto. Em função disso, funcionários com soft skills de colaboração e
+                  solidariedade se destacam mais, seja atuando em reuniões de departamentos ou
+                  participando de projetos colaborativos.</p>
+
+
+
+                <h3>Autoconfiança</h3>
+
+
+
+                <p>Mesmo com o trabalho em equipe sendo valorizado, é importante que você <a
+                    href="https://plataformasolution.com.br/11-dicas-de-marketing-pessoal-para-impressionar/"
+                    target="_blank" rel="noreferrer noopener"
+                    aria-label="tenha confiança no que faz (abre numa nova aba)">tenha confiança no que faz</a>. Só
+                  assim você pode contribuir com os planejamentos e estratégias de crescimento da corporação.</p>
+
+
+
+                <h3>Suportar críticas</h3>
+
+
+
+                <p>É impossível agradar ou concordar com todo mundo. Estamos
+                  sempre sujeitos a críticas, tanto para fazê-las quanto para recebê-las. Assim,
+                  quem leva esses momentos mais “na esportiva”, de forma leve e como aprendizado
+                  para crescer se desenvolver, se sobressai entre os demais. </p>
+
+
+
+                <h3>Atitude positiva</h3>
+
+
+
+                <p>Pensar positivamente é o primeiro passo para dar tudo certo.
+                  Mas não é o suficiente. O complemento disso é ter atitudes realmente positivas,
+                  que deixem o ambiente de trabalho melhor e mais receptivo.</p>
+
+
+
+                <p>Esses atributos pessoais e comportamentais ajudam as
+                  empresas a montarem os times dos sonhos.</p>
+
+
+
+                <p>Quais dessas soft skills você identifica na sua vida
+                  profissional? Conte para a gente nos comentários.&nbsp; </p>
+              </article>
+              <div class="post-footer">
+                <div class="post-categories">Tags:
+                  <!-- --> <span>atualização
+                    profissional</span><span>carreira</span><span>habilidades</span><span>profissionais</span></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <aside>
+                <div class="post-latest">
+                  <ul></ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="styles__Container-hhztnb-0 gWFazp">
+        <div class="container">
+          <div class="row">
+            <div class="brand col-12 col-md-6 col-lg-3">
+              <div><a href="/"><img src="/assets/logo-solution-white.svg" alt="Plataforma Solution" class="logo-white"
+                    height="60" /></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-9">
+              <nav>
+                <ul class="nav">
+                  <li class="nav-item"><a href="/">Nossas Quests</a></li>
+                  <li class="nav-item"><a href="/cursos/">Solution Originals</a></li>
+                  <li><a href="/blog/">Blog</a></li>
+                  <li class="nav-item"><a href="/sobre/">Quem Somos</a></li>
+                  <li class="nav-item"><a href="/duvidas/">Dúvidas</a></li>
+                  <li class="nav-item"><a href="/entrar/">Entrar na Plataforma</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"post":{
+      "id":2510,"date":"2019-10-02T08:00:32",
+      "date_gmt":"2019-10-02T11:00:32",
+      "guid":{"rendered":"https://plataformasolution.com.br/?p=2510"},
+      "modified":"2019-09-19T14:32:27",
+      "modified_gmt":"2019-09-19T17:32:27",
+      "slug":"soft-skills-procuradas-pelas-empresas",
+      "status":"publish",
+      "type":"post",
+      "link":"https://blog.plataformasolution.com.br/soft-skills-procuradas-pelas-empresas/","title":{"rendered":"9 soft skills mais procuradas pelas empresas"},"content":{"rendered":"\n\u003cp\u003eVocê já sabe como será a \u003ca href=\"https://next.pecege.com/?p=2173\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (abre numa nova aba)\"\u003erelação dos profissionais com as máquinas no futuro\u003c/a\u003e. Agora é hora de aprender os diferenciais que vão garantir sua relevância no mercado de trabalho. As soft skills são as competências humanas que estão deixando as técnicas profissionais, chamadas de hard skills, em segundo plano.\u003c/p\u003e\n\n\n\n\u003cp\u003eAs principais diferenças entre as pessoas e os robôs estão nas habilidades socioemocionais, adquiridas, especialmente, a partir do desenvolvimento da \u003ca href=\"https://next.pecege.com/blog/2019/06/04/inteligencia-emocional-e-problemas/\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\" (abre numa nova aba)\"\u003einteligência emocional\u003c/a\u003e. E as empresas estão de olho nisso!\u003c/p\u003e\n\n\n\n\u003cp\u003eAs soft skills são mais difíceis de medir ou definir do que\nas hard skills. Assim, elas também são mais complicadas de aprender, por isso\nsão tão valorizadas no ambiente corporativo.\u003c/p\u003e\n\n\n\n\u003cp\u003ePara uma empresa, pode ser mais fácil, por exemplo,\nincentivar um profissional a aprender inglês, que é uma competência essencialmente\ntécnica, do que trabalho em equipe, uma habilidade comportamental.\u003c/p\u003e\n\n\n\n\u003cp\u003eAssim, as vantagens de desenvolver soft skills são inúmeras,\njá que elas evidenciam lideranças, facilitam a convivência corporativa e\nauxiliam na adaptação a novas tecnologias que acabam mudando vidas, relações\nsociais e trabalhos.\u003c/p\u003e\n\n\n\n\u003cp\u003eSeparamos nove soft skills que estão no radar das empresas.\u003c/p\u003e\n\n\n\n\u003ch3\u003eComunicação\u003c/h3\u003e\n\n\n\n\u003cp\u003eParece óbvio, mas mesmo as grandes empresas de comunicação\ntêm dificuldades de manter bons diálogos internos e externos. E, se toda\nempresa é feita de pessoas, profissionais que saibam se comunicar com clareza\ne, especialmente, honestidade saem na frente.\u003c/p\u003e\n\n\n\n\u003ch3\u003eGestão do tempo\u003c/h3\u003e\n\n\n\n\u003cp\u003eSaber administrar seu tempo é uma das soft skills que mais\nchamam a atenção das empresas. Essa característica é associada a profissionais\ncomprometidos e reflete organização e respeito com o trabalho dos outros\ncolegas e com os consumidores.\u003c/p\u003e\n\n\n\n\u003ch3\u003eSolução de problemas\u003c/h3\u003e\n\n\n\n\u003cp\u003eQuem tem a habilidade de se apropriar das adversidades e\nresolvê-las com objetividade faz a diferença na equipe. Isso tem a ver com\ndominar, tecnicamente, seu ramo de atuação, e também com proatividade. Essa\ncaracterística motiva os colegas e satisfaz os clientes.\u003c/p\u003e\n\n\n\n\u003ch3\u003eFlexibilidade e adaptabilidade\u003c/h3\u003e\n\n\n\n\u003cp\u003eSer humano é ser adaptável. Mas surgiram profissionais no\nmercado de trabalho cada vez menos flexíveis nas últimas décadas. O motivo\ndisso pode ser o crescimento da capacitação e, consequentemente, o aumento do\nnível técnico dos funcionários. Por isso, ser tolerante e compreensivo cria um\nambiente agradável e acolhedor.\u0026nbsp; \u003c/p\u003e\n\n\n\n\u003ch3\u003eLidar com pressão\u003c/h3\u003e\n\n\n\n\u003cp\u003ePor mais leve que a rotina possa ser, imprevistos e\nsolicitações de última hora sempre chegam para as equipes. Assim, conseguir\nmanter o ritmo de trabalho mesmo que haja certa pressão é visto com bons olhos\npelas empresas, pois demonstra foco e determinação.\u003c/p\u003e\n\n\n\n\u003ch3\u003eTrabalho em equipe\u003c/h3\u003e\n\n\n\n\u003cp\u003eCada dia mais as empresas valorizam as equipes e seus feitos\nem conjunto. Em função disso, funcionários com soft skills de colaboração e\nsolidariedade se destacam mais, seja atuando em reuniões de departamentos ou\nparticipando de projetos colaborativos.\u003c/p\u003e\n\n\n\n\u003ch3\u003eAutoconfiança\u003c/h3\u003e\n\n\n\n\u003cp\u003eMesmo com o trabalho em equipe sendo valorizado, é importante que você \u003ca href=\"https://plataformasolution.com.br/11-dicas-de-marketing-pessoal-para-impressionar/\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"tenha confiança no que faz (abre numa nova aba)\"\u003etenha confiança no que faz\u003c/a\u003e. Só assim você pode contribuir com os planejamentos e estratégias de crescimento da corporação.\u003c/p\u003e\n\n\n\n\u003ch3\u003eSuportar críticas\u003c/h3\u003e\n\n\n\n\u003cp\u003eÉ impossível agradar ou concordar com todo mundo. Estamos\nsempre sujeitos a críticas, tanto para fazê-las quanto para recebê-las. Assim,\nquem leva esses momentos mais “na esportiva”, de forma leve e como aprendizado\npara crescer se desenvolver, se sobressai entre os demais. \u003c/p\u003e\n\n\n\n\u003ch3\u003eAtitude positiva\u003c/h3\u003e\n\n\n\n\u003cp\u003ePensar positivamente é o primeiro passo para dar tudo certo.\nMas não é o suficiente. O complemento disso é ter atitudes realmente positivas,\nque deixem o ambiente de trabalho melhor e mais receptivo.\u003c/p\u003e\n\n\n\n\u003cp\u003eEsses atributos pessoais e comportamentais ajudam as\nempresas a montarem os times dos sonhos.\u003c/p\u003e\n\n\n\n\u003cp\u003eQuais dessas soft skills você identifica na sua vida\nprofissional? Conte para a gente nos comentários.\u0026nbsp; \u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eVocê já sabe como será a relação dos profissionais com as máquinas no futuro. Agora é hora de aprender os diferenciais que vão garantir sua relevância no mercado de trabalho. As soft skills são as competências humanas que estão deixando as técnicas profissionais, chamadas de hard skills, em segundo plano. As principais diferenças entre as [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":{"id":2,"name":"Ana Rízia","url":"","description":"","link":"https://blog.plataformasolution.com.br/author/anariziapecege-com/","slug":"anariziapecege-com","avatar_urls":{"24":"https://secure.gravatar.com/avatar/13aaa076cb7a9d2c81b74ccfaf260cd6?s=24\u0026d=mm\u0026r=g","48":"https://secure.gravatar.com/avatar/13aaa076cb7a9d2c81b74ccfaf260cd6?s=48\u0026d=mm\u0026r=g","96":"https://secure.gravatar.com/avatar/13aaa076cb7a9d2c81b74ccfaf260cd6?s=96\u0026d=mm\u0026r=g"},"meta":[],"acf":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/users/2"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/users"}]}},"featured_media":2511,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[54],"tags":[76,77,1063,1064],"yst_prominent_words":[803,276,277,304,311,309,1372,1373,1371,1369,305,505,291,721,418,446,1370,434,212,1368],"acf":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts/2510"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/users/2"}],"replies":[{"embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/comments?post=2510"}],"version-history":[{"count":2,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts/2510/revisions"}],"predecessor-version":[{"id":2513,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts/2510/revisions/2513"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/media/2511"}],"wp:attachment":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/media?parent=2510"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/categories?post=2510"},{"taxonomy":"post_tag","embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags?post=2510"},{"taxonomy":"yst_prominent_words","embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/yst_prominent_words?post=2510"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]},"media":{"id":2511,"date":"2019-09-19T14:25:00","date_gmt":"2019-09-19T17:25:00","guid":{"rendered":"https://plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg"},"modified":"2019-09-19T14:25:27","modified_gmt":"2019-09-19T17:25:27","slug":"soft-skills-procuradas-pelas-empresas","status":"inherit","type":"attachment","link":"https://blog.plataformasolution.com.br/soft-skills-procuradas-pelas-empresas/soft-skills-procuradas-pelas-empresas/","title":{"rendered":"soft skills procuradas pelas empresas"},"author":2,"comment_status":"open","ping_status":"closed","template":"","meta":[],"acf":[],"description":{"rendered":"\u003cp class=\"attachment\"\u003e\u003ca href='https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg'\u003e\u003cimg width=\"300\" height=\"227\" src=\"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-300x227.jpg\" class=\"attachment-medium size-medium\" alt=\"soft skills procuradas pelas empresas\" loading=\"lazy\" srcset=\"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-300x227.jpg 300w,
+     https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-768x581.jpg 768w, https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-1024x775.jpg 1024w, https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-225x170.jpg 225w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003esoft skills mais procuradas pelas empresas\u003c/p\u003e\n"},"caption":{"rendered":"\u003cp\u003esoft skills mais procuradas pelas empresas\u003c/p\u003e\n"},"alt_text":"soft skills procuradas pelas empresas","media_type":"image","mime_type":"image/jpeg","media_details":{"width":2203,"height":1667,"file":"2019/09/soft-skills-procuradas-pelas-empresas.jpg","sizes":{"thumbnail":{"file":"soft-skills-procuradas-pelas-empresas-150x150.jpg","width":150,"height":150,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-150x150.jpg"},"medium":{"file":"soft-skills-procuradas-pelas-empresas-300x227.jpg","width":300,"height":227,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-300x227.jpg"},"medium_large":{"file":"soft-skills-procuradas-pelas-empresas-768x581.jpg","width":768,"height":581,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-768x581.jpg"},"large":{"file":"soft-skills-procuradas-pelas-empresas-1024x775.jpg","width":1024,"height":775,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-1024x775.jpg"},"webinar_thumbnails":{"file":"soft-skills-procuradas-pelas-empresas-225x170.jpg","width":225,"height":170,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas-225x170.jpg"},"full":{"file":"soft-skills-procuradas-pelas-empresas.jpg","width":2203,"height":1667,"mime_type":"image/jpeg","source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}},"post":2510,"source_url":"https://blog.plataformasolution.com.br/wp-content/uploads/2019/09/soft-skills-procuradas-pelas-empresas.jpg","_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/media/2511"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/media"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/types/attachment"}],"author":[{"embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/users/2"}],"replies":[{"embeddable":true,"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/comments?post=2511"}]}},"category":[{"id":54,"count":34,"description":"","link":"https://blog.plataformasolution.com.br/category/carreira/","name":"Carreira","slug":"carreira","taxonomy":"category","parent":0,"meta":[],"acf":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/categories/54"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/categories"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts?categories=54"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"tag":[{"id":76,"count":6,"description":"","link":"https://blog.plataformasolution.com.br/tag/atualizacao-profissional/","name":"atualização profissional","slug":"atualizacao-profissional","taxonomy":"post_tag","meta":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags/76"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/taxonomies/post_tag"}],"wp:post_type":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts?tags=76"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":77,"count":13,"description":"","link":"https://blog.plataformasolution.com.br/tag/carreira/","name":"carreira","slug":"carreira","taxonomy":"post_tag","meta":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags/77"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/taxonomies/post_tag"}],"wp:post_type":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts?tags=77"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":1063,"count":8,"description":"","link":"https://blog.plataformasolution.com.br/tag/habilidades/","name":"habilidades","slug":"habilidades","taxonomy":"post_tag","meta":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags/1063"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/taxonomies/post_tag"}],"wp:post_type":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts?tags=1063"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":1064,"count":7,"description":"","link":"https://blog.plataformasolution.com.br/tag/profissionais/","name":"profissionais","slug":"profissionais","taxonomy":"post_tag","meta":[],"_links":{"self":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags/1064"}],"collection":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/tags"}],"about":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/taxonomies/post_tag"}],"wp:post_type":[{"href":"https://blog.plataformasolution.com.br/wp-json/wp/v2/posts?tags=1064"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}]}},"__N_SSG":true},"page":"/[slug]","query":{"slug":"soft-skills-procuradas-pelas-empresas"},"buildId":"cLxDIRWdNlM_2ep7CyuKu","nextExport":false,"isFallback":false,"gsp":true,"customServer":true}</script>
+  <script nomodule="" src="/_next/static/chunks/polyfills-eac48225cf5fa085a99e.js"></script>
+  <script src="/_next/static/chunks/main-80953625ffe90e555181.js" async=""></script>
+  <script src="/_next/static/chunks/webpack-488dc228921f1fdbc0e7.js" async=""></script>
+  <script src="/_next/static/chunks/framework.a5d4ffe593e18b49243e.js" async=""></script>
+  <script src="/_next/static/chunks/commons.df970249aa3f489cd61e.js" async=""></script>
+  <script src="/_next/static/chunks/f7b7b2da00d107e866539eecac865b0df10f37ff.9db215fd6407b6b58822.js" async=""></script>
+  <script src="/_next/static/chunks/ea3e4da80c20ad35d6d415ed6dbd982421b4189f.5f35177e51e1d22b437b.js" async=""></script>
+  <script src="/_next/static/chunks/pages/_app-61aed7a2e8a26f5e19d8.js" async=""></script>
+  <script src="/_next/static/chunks/1bfc9850.c62a7fdd8819c8997449.js" async=""></script>
+  <script src="/_next/static/chunks/523e3018483e5e896f365fad768dae57c9c37968.a1bb204f1f8b8207bec2.js" async=""></script>
+  <script src="/_next/static/chunks/925836a208f2f885aab45f08293f702b2be5a1a2.3ece2e044b15a5069cf2.js" async=""></script>
+  <script src="/_next/static/chunks/a82fc68a3ca230092d1628da8cf06fbb577bab16.644770544283622a0898.js" async=""></script>
+  <script src="/_next/static/chunks/cd25562b420aa918cbd941088e880351c6c3d2e6.98a9590783549f770b9c.js" async=""></script>
+  <script src="/_next/static/chunks/57c870d3bc193910bfa4c51064e64ecc9955d4ca.f45841ff11a11a35f23e.js" async=""></script>
+  <script src="/_next/static/chunks/e62dc9f6a11d84dfddaca06be4756b049d146996.fa86edde57ef6156b1ac.js" async=""></script>
+  <script src="/_next/static/chunks/pages/%5Bslug%5D-90a0fad8cc889d55a02a.js" async=""></script>
+  <script src="/_next/static/cLxDIRWdNlM_2ep7CyuKu/_buildManifest.js" async=""></script>
+  <script src="/_next/static/cLxDIRWdNlM_2ep7CyuKu/_ssgManifest.js" async=""></script>
+</body>
+
+</html>
