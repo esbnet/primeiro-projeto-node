@@ -1,10 +1,15 @@
-import {Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn} from "typeorm";
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('users')
 class User {
-
-  @PrimaryGeneratedColumn("uuid")
-  id: String;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   name: string;
@@ -20,7 +25,6 @@ class User {
 
   @UpdateDateColumn()
   updated_at: Date;
-
 }
 
 export default User;
